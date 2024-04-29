@@ -366,9 +366,6 @@ h5 {
 .digitalPage {
   background-color: var(--generalBgClr);
 }
-.page-header {
-  padding: 3rem 2.5rem;
-}
 /* Digital Page */
 #digital {
   padding: 3rem 2.5rem;
@@ -432,9 +429,7 @@ h5 {
 .studioPage {
   background-color: var(--generalBgClr);
 }
-.header {
-  padding: 3rem 2.5rem;
-}
+
 /* Studio Page */
 #studio {
   padding: 3rem 2.5rem;
@@ -462,9 +457,7 @@ h5 {
 .developmentPage {
   background-color: var(--generalBgClr);
 }
-.header {
-  padding: 3rem 2.5rem;
-}
+
 /* techdevlopment page */
 #development {
   padding: 3rem 2.5rem;
