@@ -365,10 +365,11 @@ h5 {
 /* Page header */
 .digitalPage {
   background-color: var(--generalBgClr);
+  padding: 3rem 2.5rem;
 }
 /* Digital Page */
 #digital {
-  padding: 3rem 2.5rem;
+  padding-top: 3rem;
   display: grid;
   grid-template-columns: 1fr;
 }
@@ -396,11 +397,12 @@ h5 {
 /* Page header */
 .traditionalPage {
   background-color: var(--generalBgClr);
+  padding: 3rem 2.5rem;
 }
 
 /* Traditional  Page */
 #traditionalPage {
-  padding: 3rem 2.5rem;
+  padding-top: 3rem;
   display: grid;
   grid-template-columns: 1fr;
 }
@@ -428,11 +430,12 @@ h5 {
 /* Page header */
 .studioPage {
   background-color: var(--generalBgClr);
+  padding: 3rem 2.5rem;
 }
 
 /* Studio Page */
 #studio {
-  padding: 3rem 2.5rem;
+  padding-top: 3rem;
   display: grid;
   grid-template-columns: 1fr;
 }
@@ -456,11 +459,12 @@ h5 {
 /* Page header */
 .developmentPage {
   background-color: var(--generalBgClr);
+  padding: 3rem 2.5rem;
 }
 
 /* techdevlopment page */
 #development {
-  padding: 3rem 2.5rem;
+  padding-top: 3rem;
   display: grid;
   grid-template-columns: 1fr;
 }
@@ -475,6 +479,34 @@ h5 {
 }
 
 #development h1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* cyber security page  */
+/* Page header */
+.cyberPage {
+  background-color: var(--generalBgClr);
+  padding: 3rem 2.5rem;
+}
+
+/* techdevlopment page */
+#cyber {
+  padding-top: 3rem;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.btn-back {
+  grid-row: 5/6;
+  margin: 2rem auto;
+}
+
+.cyber-content {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding: 2rem;
+}
+
+#cyber h1 {
   display: flex;
   justify-content: space-between;
 }
