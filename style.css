@@ -6,6 +6,9 @@
   --spacialffClr: #763f41;
   --aboutffClr: #d9d9d9;
   --aboutBgClr: #121212;
+  --newPageBg: #222529;
+  --newPageBgVar: #272a2d;
+  --newGreen: #0bc5af;
 }
 
 *,
@@ -128,7 +131,7 @@ h5 {
 }
 
 .hero h1 {
-  font-size: 2.4rem;
+  font-size: 3rem;
   text-align: center;
   text-transform: capitalize;
 }
@@ -137,11 +140,11 @@ h5 {
   text-align: center;
   font-size: 1.6rem;
   line-height: 1.2;
-  font-weight: 200;
+  font-weight: 300;
 }
 
 .special {
-  color: #fe5779;
+  color: #e22047;
 }
 
 .btn {
@@ -154,7 +157,7 @@ h5 {
   border-radius: 5rem;
   padding: 0.5rem 2rem;
   color: #fff;
-  width: 80%;
+  width: 100%;
   max-width: 30rem;
   letter-spacing: 0.3rem;
 }
@@ -255,6 +258,9 @@ footer {
   padding: 3rem 2.5rem;
   background-color: var(--generalBgClr);
 }
+.digitalPage footer {
+  background-color: var(--newPageBgVar);
+}
 .logo img {
   margin: 0 auto;
   position: relative;
@@ -276,122 +282,68 @@ h5 {
   width: 50px;
 }
 
-/* media queries */
-
-@media screen and (min-width: 768px) {
-  /* hero section */
-  .action .menu {
-    display: none;
-  }
-  .list {
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 2.5rem;
-    margin: 0;
-    padding: 0;
-    position: static;
-    width: 100%;
-    height: 0;
-    background-color: transparent;
-  }
-  .hero h1 {
-    font-size: 4.5rem;
-  }
-  .hero p {
-    font-size: 1.8rem;
-    padding: 3rem;
-  }
-  /* about section */
-  #about-page {
-    grid-template-columns: 1fr 1.5fr;
-    gap: 2rem;
-  }
-  .faceImage {
-    grid-column: 2/3;
-    grid-row: 1/3;
-  }
-  .aboutBtn {
-    grid-column: 1/2;
-    grid-row: 3/4;
-  }
-  .boldPara {
-    font-size: 3rem;
-  }
-  /* services section */
-  #service-page {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
-  }
-  .sheading {
-    grid-column: 1/-1;
-  }
-
-  .cyber {
-    grid-column: 1/-1;
-  }
-  /* client section */
-
-  .images {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  /* navigation */
-  .list {
-    gap: 8rem;
-  }
-  .hero {
-    grid-template-columns: 1fr 1.25fr;
-  }
-  .hero h1 {
-    font-size: 6.3rem;
-    margin: 5rem auto;
-  }
-  .hero-image {
-    grid-column: 2/3;
-    grid-row: 1/3;
-  }
-  .btn {
-    width: 60%;
-  }
-}
-
 /* digital marketing services page  */
 
 /* Page header */
 .digitalPage {
-  background-color: var(--generalBgClr);
+  background-color: var(--newPageBg);
   padding: 3rem 2.5rem;
+  color: var(--aboutffClr);
 }
 /* Digital Page */
+
 #digital {
-  padding-top: 3rem;
+  padding-top: 3rem 2.5rem;
+}
+.intro {
   display: grid;
   grid-template-columns: 1fr;
 }
-.btn-back {
-  grid-row: 5/6;
-  margin: 2rem auto;
+.intro .num {
+  font-size: 9rem;
+  font-family: "Big Shoulders Inline Display", sans-serif;
+  color: var(--newGreen);
 }
-.digi-subHeading img {
-  width: 6rem;
+.intro .main-h1 {
+  display: block;
+  font-size: 3.2rem;
 }
-.digi-content {
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  padding: 2rem;
+.intro .para {
+  font-size: 1.6rem;
 }
-.digi-subHeading {
-  display: flex;
+.digi-img img {
+  border-radius: 0 0 50% 50%;
+  border: 1rem solid var(--generalBgClr);
+}
+#digital hr {
+  width: 100%;
+  height: 18px;
+  border: 0;
+  background-color: var(--newGreen);
+  border-radius: 10px;
+  margin-top: 3rem;
+}
+.contents {
+  display: grid;
+  grid-template-columns: 1fr;
   gap: 2rem;
 }
-#digital h1 {
-  display: flex;
-  justify-content: space-between;
+.page-subHeading img {
+  width: 70px;
+  fill: var(--newGreen);
 }
+.page-subHeading {
+  display: flex;
+  gap: 3rem;
+}
+.content {
+  background-color: var(--newPageBgVar);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 1.5rem;
+}
+
 /* Traditional advertising services page  */
 
 /* Page header */
@@ -509,4 +461,246 @@ h5 {
 #cyber h1 {
   display: flex;
   justify-content: space-between;
+}
+/* media queries */
+
+@media screen and (min-width: 768px) {
+  /* hero section */
+  .action .menu {
+    display: none;
+  }
+  .hero-image {
+    max-width: 70%;
+    margin: 0 auto;
+  }
+  .list {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+    margin: 0;
+    padding: 0;
+    position: static;
+    width: 100%;
+    height: 0;
+    background-color: transparent;
+  }
+  .digitalPage .list li a {
+    color: var(--newGreen);
+  }
+  .hero h1 {
+    font-size: 4.5rem;
+  }
+  .hero p {
+    font-size: 1.8rem;
+    padding: 3rem;
+    margin: 0;
+  }
+  /* about section */
+  #about-page {
+    grid-template-columns: 1fr 1.5fr;
+    gap: 2rem;
+  }
+  .faceImage {
+    grid-column: 2/3;
+    grid-row: 1/3;
+  }
+  .aboutBtn {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+  .boldPara {
+    font-size: 3rem;
+  }
+  .right-para {
+    align-self: center;
+  }
+  /* services section */
+  #service-page {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+  .sheading {
+    grid-column: 1/-1;
+  }
+
+  .cyber {
+    grid-column: 1/-1;
+  }
+  /* client section */
+
+  .images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  /* digital marketing services 768px size */
+  .intro {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+  .para {
+    grid-column: 1/2;
+    justify-content: center;
+    align-items: center;
+  }
+  .digi-img {
+    grid-column: 2/3;
+    grid-row: 1/3;
+    padding-top: 5rem;
+  }
+  .digi-img img {
+    border-radius: 0 100px 0 100px;
+    border: 1rem solid var(--generalBgClr);
+  }
+
+  .contents {
+    grid-template-columns: 1fr 1fr;
+    margin-top: 3rem;
+  }
+  .analytics {
+    grid-column: 1/-1;
+  }
+
+  /* traditional media page 768px */
+  #traditionalPage {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.3fr, 1fr, 5fr 1fr;
+    gap: 2rem;
+  }
+  #traditional p {
+    grid-column: 1/2;
+  }
+  .traditional-img {
+    grid-column: 2/3;
+    grid-row: 1/3;
+  }
+  .traditional-contents {
+    grid-column: 1/-1;
+    grid-row: 3/4;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  #traditional btn {
+    grid-column: 1/-1;
+  }
+  .print {
+    grid-column: 1/-1;
+  }
+  /* studio page 768px */
+  #studio-page {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  /* navigation */
+  .list {
+    gap: 8rem;
+  }
+  .hero {
+    grid-template-columns: 1fr 1.25fr;
+  }
+  .hero h1 {
+    font-size: 6.3rem;
+    margin: 5rem auto;
+  }
+  .hero-image {
+    grid-column: 2/3;
+    grid-row: 1/3;
+    max-width: 100%;
+  }
+  .btn {
+    width: 60%;
+  }
+  /* digital marketing services 1240px size */
+  .intro h1 {
+    padding-top: 2rem;
+  }
+  .contents {
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 3rem;
+  }
+
+  .pooh {
+    grid-column: 1/-1;
+    grid-row: 2/3;
+  }
+  .analytics {
+    grid-column: 3/4;
+    grid-row: 3/4;
+  }
+
+  /* aboutus section */
+  .right-para {
+    padding-inline: 3rem;
+  }
+  /* traditional media 1240px */
+  .traditional-contents {
+    grid-column: 1/-1;
+    grid-row: 3/4;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr;
+    gap: 2rem;
+  }
+  .print {
+    grid-column: 2/4;
+    grid-row: 2/3;
+  }
+  .digi-img {
+    /* max-width: 80%; */
+    margin: 0 auto;
+  }
+  .digi-para {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (min-width: 1240px) {
+  /* hero section */
+  .hero h1 {
+    align-self: end;
+    margin-bottom: 0;
+  }
+  .hero p {
+    align-self: start;
+  }
+  /* about US section */
+  .heading {
+    align-self: end;
+  }
+  /* services section */
+  #service-page {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .cyber {
+    grid-column: 2/4;
+    grid-row: 3/4;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  /* hero section */
+  .hero-content {
+    align-self: start;
+    margin-top: 0;
+  }
+  /* digital marketing page */
+  .contents {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .pooh {
+    grid-column: 1/3;
+    grid-row: 2/3;
+  }
+  .analytics {
+    grid-column: 4/5;
+    grid-row: 2/3;
+  }
+  .intro h1 {
+    align-self: end;
+  }
 }
