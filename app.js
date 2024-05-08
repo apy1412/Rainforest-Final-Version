@@ -7,3 +7,4 @@ menu.addEventListener("click", () => {
 close.addEventListener("click", () => {
     body.classList.remove("open");
 });
+
