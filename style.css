@@ -162,11 +162,11 @@ h5 {
 }
 
 .btn--contact {
-  width: 90%;
+  width: 100%;
   max-width: 30rem;
 }
 .btn-back {
-  width: 90%;
+  width: 100%;
   max-width: 30rem;
 }
 
@@ -238,7 +238,7 @@ hr {
 .btn-service {
   margin-left: 0;
   padding: 1rem 1.5rem;
-  width: 90%;
+  width: 100%;
   max-width: 30rem;
 }
 
@@ -710,7 +710,7 @@ h5 {
     object-fit: cover;
   }
   .btn-service {
-    width: 50%;
+    width: 80%;
   }
   /* digital marketing services 1240px size */
 
